@@ -1,9 +1,11 @@
 import discord
 import random
+import os
 
 client = discord.Client()
 
-token = "ODU2MTExNjU4MDk5NDA4ODk2.YM8SHQ.iffAIACiGwEZ6UF23SLG-S3W6BE"
+access_token = os.environ["BOT_TOKEN"]
+token = "access_token"
 
 @client.event
 async def on_ready():
